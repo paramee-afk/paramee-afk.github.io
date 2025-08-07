@@ -34,7 +34,6 @@ WHERE ProductName LIKE '%ยางลบ%';
 SELECT OrderID, OrderDate, TotalAmount
 FROM Orders
 WHERE OrderDate < '2025-02-15';
-หมายเหตุ: ถ้าไม่มีฟิลด์ TotalAmount อาจต้อง join กับ OrderDetails แล้ว SUM(UnitPrice * Quantity) แทน
 
 รหัสสินค้า ชื่อสินค้า ที่มีจำนวนคงเหลือตั้งแต่ 400 ขึ้นไป
 
@@ -80,7 +79,6 @@ WHERE Title = 'Sales Representative';
 
 SELECT EmployeeID, FirstName, LastName, Username, Password
 FROM Employees;
-หมายเหตุ: ถ้าไม่มี Username, Password ให้ตรวจสอบชื่อฟิลด์จริงในตาราง
 
 ชื่อผู้ใช้ และรหัสผ่านของพนักงานที่ชื่อก้องนิรันดร์
 
